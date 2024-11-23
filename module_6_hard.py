@@ -36,7 +36,7 @@ class Figure:
         return self.__sides
 
     def __len__(self):
-        return self.side * self.sides_count
+        return self.sides[0] * self.sides_count
 
     def set_sides(self, *args):
         mas_list = []
@@ -59,7 +59,7 @@ class Circle(Figure):
 
     def get_square(self):
         self.set_radius()
-        return (self.__radius ** 2) * 3.141592653589793
+        return ((self.__radius ** 2) * 3.141592653589793)
 
 
 class Triangle(Figure):
@@ -103,6 +103,5 @@ print(circle1.get_sides())
 
 # Проверка периметра (круга), это и есть длина:
 print(len(circle1))
-
 # Проверка объёма (куба):
 print(cube1.get_volume())
