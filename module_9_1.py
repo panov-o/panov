@@ -32,13 +32,5 @@ def sorted_(int_list):
     result = sorted(int_list)
     return result
 
-def midle(int_list):
-    result = 0
-    for i in int_list:
-        result += i
-    result = result / len_(int_list)
-    return result
-
-
 print(apply_all_func([6, 20, 15, 9], max, min))
 print(apply_all_func([6, 20, 15, 9], len, sum, sorted))
