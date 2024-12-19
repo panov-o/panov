@@ -10,7 +10,7 @@ class Iterator():
             raise StepValueError("Шаг не может быть равен 0")
 
     def __iter__(self):
-        self.pointer = self.start
+        self.pointer = self.start - self.step
         return self
 
     def __next__(self):
